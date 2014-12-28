@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="rtabmap_navigation" type="rtabmap_navigation_node" name="rtabmap_navigation_node">
+		<param name="goal_x" value="0.2"/>
+		<param name="goal_y" value="0.2"/>
+		<remap from="/cmd_vel" to="/turtle1/cmd_vel" />
+	</node>
+</launch>
